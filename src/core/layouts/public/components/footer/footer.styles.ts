@@ -21,9 +21,13 @@ const styles = {
             width:rem(sizes.largeMobileMainWidth),
             margin:sizes.marginAuto,
             marginTop:"5rem",
-            padding:"2rem",
+            // padding:"2rem",
         },
         [breakpoint(576)] : {
+            width:sizes.smallMobileMainWidth,
+            margin:sizes.marginAuto,    
+         },
+        [breakpoint(416)] : {
             width:rem(sizes.miniMobileMainWidth),
             margin:sizes.marginAuto
          },
@@ -59,9 +63,12 @@ const styles = {
         gap:"7rem",
         [breakpoint(576)] : {
             display:"flex",
-            flexDirection:"column",
             marginTop:rem(sizes.base)
          },
+         [breakpoint(416)] : {
+            flexDirection:"column"   
+         },
+         
     },
     sectionMainDiv:{
         display:"flex",

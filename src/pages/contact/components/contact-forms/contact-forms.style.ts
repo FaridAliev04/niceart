@@ -41,11 +41,16 @@ const styles = {
       display: "flex",
       flexDirection: "column",
     },
-    [breakpoint(576)]: {
-      width: rem(sizes.miniMobileMainWidth),
-      margin: sizes.marginAuto,
-      padding: "2rem",
-    },
+    [breakpoint(576)] : {
+      width:sizes.smallMobileMainWidth,
+      margin:sizes.marginAuto,
+      padding:"1rem"
+  },
+  [breakpoint(440)] : {
+     width:rem(sizes.miniMobileMainWidth),
+     margin:sizes.marginAuto,
+     padding:"1rem"
+ },
   },
   container: {
     background: colors.footerBg,

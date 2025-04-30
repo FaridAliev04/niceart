@@ -19,8 +19,10 @@ const sizes={
     largeMobileMainWidth:576,
     largeMobileLargeFontSize:"2rem",
 
-    // mini Mobile
+    // small mobile
+    smallMobileMainWidth:"27rem",
 
+    // mini Mobile
     miniMobileMainWidth:320
 
 }

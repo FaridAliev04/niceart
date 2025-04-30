@@ -21,10 +21,15 @@ const styles = {
              padding:"1rem"
          },
          [breakpoint(576)] : {
-             width:rem(sizes.miniMobileMainWidth),
-             margin:sizes.marginAuto,
-             padding:"1rem"
-         },
+            width:sizes.smallMobileMainWidth,
+            margin:sizes.marginAuto,
+            padding:"1rem"
+        },
+        [breakpoint(440)] : {
+           width:rem(sizes.miniMobileMainWidth),
+           margin:sizes.marginAuto,
+           padding:"1rem"
+       },
     }
 
 

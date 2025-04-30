@@ -25,6 +25,11 @@ const styles = {
             padding:"0 1rem"
         },
         [breakpoint(576)] : {
+            width:(sizes.smallMobileMainWidth),
+            margin:sizes.marginAuto,
+            marginTop:"5rem",
+        },
+        [breakpoint(440)] : {
             width:rem(sizes.miniMobileMainWidth),
             margin:sizes.marginAuto,
             marginTop:"5rem",

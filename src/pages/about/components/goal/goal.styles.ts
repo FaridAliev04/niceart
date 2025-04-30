@@ -24,11 +24,28 @@ const styles = {
             padding:"2rem"
          },
          [breakpoint(768)]:{
-            width:rem(sizes.largeMobileMainWidth),
+            width:sizes.smallMobileMainWidth,
             margin:sizes.marginAuto,
             marginTop:"5rem"
           },
           [breakpoint(576)] : {
+            width:(sizes.smallMobileMainWidth),
+            margin:sizes.marginAuto,
+            marginTop:"2rem",
+            padding:"2rem 1rem",
+            "& h1":{
+                fontSize:"1.5rem",
+                 width:"fit-content"
+            },
+            "& p":{
+                width:"fit-content"
+            },
+            "& img":{
+                width: "5rem",
+                height: "5rem"
+            }
+        },
+        [breakpoint(440)] : {
             width:rem(sizes.miniMobileMainWidth),
             margin:sizes.marginAuto,
             marginTop:"2rem",
@@ -70,7 +87,10 @@ const styles = {
     goalText:{
         color:colors.gray,
         lineHeight:"22px",
-        width:"31.25rem"
+        width:"31.25rem",
+        [breakpoint(768)] : {
+            width:"fit-content"
+        },
     },
     goalData:{
         display:"flex",

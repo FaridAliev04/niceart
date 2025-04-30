@@ -37,7 +37,7 @@ const NavComponet = () => {
         }
     },[location])
     return (
-        <div className={classes.container}>
+        <div className={`${classes.container}`}>
             <nav className={classes.nav}>
                 <div>
                     <Logo/>

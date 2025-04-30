@@ -14,15 +14,23 @@ const styles = {
         [breakpoint(1260)] : {
             width:rem(sizes.tabletMainWidth),
             margin:sizes.marginAuto,
+            padding:"1rem"
          },
          [breakpoint(768)]:{
              width:rem(sizes.largeMobileMainWidth),
              margin:sizes.marginAuto,
+             padding:"1rem"
          },
          [breakpoint(576)] : {
-             width:rem(sizes.miniMobileMainWidth),
+             width:sizes.smallMobileMainWidth,
              margin:sizes.marginAuto,
+             padding:"1rem"
          },
+         [breakpoint(440)] : {
+            width:rem(sizes.miniMobileMainWidth),
+            margin:sizes.marginAuto,
+            padding:"1rem"
+        },
     },
 
 

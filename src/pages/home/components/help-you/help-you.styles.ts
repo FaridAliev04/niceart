@@ -31,6 +31,12 @@ const styles = {
             gap:"1rem"
         },
         [breakpoint(576)] : {
+            width:sizes.smallMobileMainWidth,
+            margin:sizes.marginAuto,
+            marginTop:"5rem",
+            padding:"0 1rem",
+        },
+        [breakpoint(440)] : {
             width:rem(sizes.miniMobileMainWidth),
             margin:sizes.marginAuto,
             marginTop:"5rem",
@@ -48,7 +54,7 @@ const styles = {
         padding:"0.5rem 1rem",
         borderRadius:"8px",
         [breakpoint(576)] : {
-            padding:"0.3rem"
+            padding:"0.5rem"
         },
     },
     aboutBtn:{

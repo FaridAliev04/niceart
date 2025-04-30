@@ -24,10 +24,17 @@ const styles = {
              marginTop:"2rem",
          },
          [breakpoint(576)] : {
-             width:"18rem",
-             margin:sizes.marginAuto,
-             marginTop:"2rem",
-         },
+            width:sizes.smallMobileMainWidth,
+            margin:sizes.marginAuto,
+            marginTop:"2rem",
+            padding:"1rem"
+        },
+        [breakpoint(440)] : {
+            width:rem(sizes.miniMobileMainWidth),
+            margin:sizes.marginAuto,
+            marginTop:"2rem",
+            padding:"1rem"
+        },
     },
     about:{
         color:colors.green

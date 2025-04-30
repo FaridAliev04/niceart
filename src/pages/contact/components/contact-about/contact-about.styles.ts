@@ -22,12 +22,18 @@ const styles = {
              padding:"1rem",
              paddingBottom:"30rem"
          },
+
          [breakpoint(576)] : {
-             width:rem(sizes.miniMobileMainWidth),
-             margin:sizes.marginAuto,
-             padding:"1rem",
-              paddingBottom:"30rem"
-         },
+            width:sizes.smallMobileMainWidth,
+            margin:sizes.marginAuto,
+           padding:"2rem",
+            paddingBottom:"30rem"
+        },
+        [breakpoint(440)] : {
+           width:rem(sizes.miniMobileMainWidth),
+           margin:sizes.marginAuto,
+           paddingBottom:"30rem"
+       },
     },
     contactAbout:{
         display:"flex",
@@ -39,9 +45,9 @@ const styles = {
             display:"flex",
             flexDirection:"column",
             width:"100%",
-            
         },
         [breakpoint(576)] : {
+            marginTop:"0",
         },
         
     },
@@ -162,8 +168,11 @@ const styles = {
             left: "5rem"
          },
          [breakpoint(576)] : {
-            left: "2rem"
-         },
+            left:"4rem"
+        },
+        [breakpoint(440)] : {
+          left: "2rem"
+       },
 
     },
     img:{

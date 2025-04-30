@@ -28,12 +28,15 @@ const styles = {
         [breakpoint(768)] : {
             display:"flex",
             flexDirection:"column",
+            padding:"1rem"
          },
         [breakpoint(576)] : {
             display:"flex",
             flexDirection:"column",
-            gap:rem(sizes.base)
+            gap:rem(sizes.base),
+            marginTop:"1rem"
          },
+         
     },
     textHeader:{
         color:colors.gray,

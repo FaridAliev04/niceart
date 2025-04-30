@@ -15,7 +15,7 @@ const styles = {
     [breakpoint(1260)] : {
       width:rem(sizes.tabletMainWidth),
       margin:sizes.marginAuto,
-      marginTop:"5rem"
+      marginTop:"10rem"
    },
    [breakpoint(768)]:{
     width:rem(sizes.largeMobileMainWidth),

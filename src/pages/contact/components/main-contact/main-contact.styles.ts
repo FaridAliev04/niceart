@@ -25,12 +25,19 @@ const styles = {
             marginTop:"2rem",
             padding:"1rem"
          },
-         [breakpoint(576)] : {
-            width:rem(sizes.miniMobileMainWidth),
+
+        [breakpoint(576)] : {
+            width:sizes.smallMobileMainWidth,
             margin:sizes.marginAuto,
-            marginTop:"2rem",
-            padding:"1rem"
+            padding:"2rem",
+             marginTop:"2rem",
         },
+        [breakpoint(440)] : {
+           width:rem(sizes.miniMobileMainWidth),
+           margin:sizes.marginAuto,
+           padding:"2rem",
+           marginTop:"2rem",
+       },
     },
     contact:{
         color:colors.green

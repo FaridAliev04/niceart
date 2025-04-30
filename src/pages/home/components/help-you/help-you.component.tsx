@@ -5,7 +5,7 @@ import { useHelpYouStyles } from "./help-you.styles";
 const HelpYouComponent = () => {
     const classes=useHelpYouStyles()
     return (
-        <div className={classes.container}>
+        <div className={`${classes.container}`}>
             <h1 className={classes.header}>
             We help you find
             the perfect loan

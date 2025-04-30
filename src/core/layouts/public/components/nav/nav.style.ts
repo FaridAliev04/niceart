@@ -25,12 +25,19 @@ const styles = {
             marginTop:rem(sizes.base),
             padding:"0 1rem"
         },
+        
         [breakpoint(576)] : {
-            width:rem(sizes.miniMobileMainWidth),
+            width:sizes.smallMobileMainWidth,
             margin:sizes.marginAuto,
             marginTop:rem(sizes.base),
             padding:"0 1rem"
         },
+        [breakpoint(440)] : {
+            width:rem(sizes.miniMobileMainWidth),
+            margin:sizes.marginAuto,
+            marginTop:rem(sizes.base),
+            padding:"0 1rem"
+         },
     },
     navList:{
         display:"flex",

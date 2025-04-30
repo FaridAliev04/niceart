@@ -31,10 +31,15 @@ const styles = {
              padding:"1rem"
          },
          [breakpoint(576)] : {
-             width:rem(sizes.miniMobileMainWidth),
-             margin:sizes.marginAuto,
-             padding:"1rem"
-         },
+            width:sizes.smallMobileMainWidth,
+            margin:sizes.marginAuto,
+            padding:"1rem"
+        },
+        [breakpoint(440)] : {
+           width:rem(sizes.miniMobileMainWidth),
+           margin:sizes.marginAuto,
+           padding:"1rem"
+       },
     },
     about:{
         color:colors.green
@@ -62,8 +67,6 @@ const styles = {
          [breakpoint(576)] : {
              width:"fit-content",
              fontSize:"1.5rem"
-            //  margin:sizes.marginAuto,
-            //  padding:"1rem"
          },
     },
     mainDiv:{
@@ -78,17 +81,18 @@ const styles = {
          [breakpoint(768)]:{
              width:rem(sizes.largeMobileMainWidth),
              margin:sizes.marginAuto,
-            //  padding:"1rem",
              flexDirection:"column",
             marginTop:"2rem"
          },
          [breakpoint(576)] : {
-             width:"18rem",
-             margin:sizes.marginAuto,
-            //  padding:"1rem",
-             flexDirection:"column",
-             marginTop:"2rem"
-         },
+            width:sizes.smallMobileMainWidth,
+            margin:sizes.marginAuto,
+            marginTop:"2rem"
+        },
+        [breakpoint(440)] : {
+           width:"18rem",
+           margin:sizes.marginAuto,
+       },
     },
     paramsImg:{
         [breakpoint(768)]:{
