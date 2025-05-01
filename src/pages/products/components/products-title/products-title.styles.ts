@@ -64,6 +64,9 @@ const styles = {
         [breakpoint(1260)] : {
             width: "24rem"
          },
+         [breakpoint(768)] : {
+            width:"fit-content"
+         },
          [breakpoint(576)] : {
             width:"fit-content"
          },
