@@ -92,6 +92,7 @@ const styles = {
         [breakpoint(440)] : {
            width:"18rem",
            margin:sizes.marginAuto,
+           marginTop:"2rem"
        },
     },
     paramsImg:{

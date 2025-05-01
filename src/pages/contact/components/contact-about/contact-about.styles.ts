@@ -45,6 +45,7 @@ const styles = {
             display:"flex",
             flexDirection:"column",
             width:"100%",
+            marginTop:"0"
         },
         [breakpoint(576)] : {
             marginTop:"0",
@@ -184,7 +185,7 @@ const styles = {
              maxWidth:"9rem"
          },
          [breakpoint(576)] : {
-             maxWidth:"130px"
+             maxWidth:"100px"
          },
     }
 }

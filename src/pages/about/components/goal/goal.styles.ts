@@ -46,7 +46,7 @@ const styles = {
             }
         },
         [breakpoint(440)] : {
-            width:rem(sizes.miniMobileMainWidth),
+            width:"18rem",
             margin:sizes.marginAuto,
             marginTop:"2rem",
             padding:"2rem 1rem",

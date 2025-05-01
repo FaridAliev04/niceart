@@ -28,6 +28,8 @@ const styles = {
       "& p":{
         width:"fit-content",
       }
+  },[breakpoint(440)] : {
+      width:"18rem"
   },
   },
   strategy:{

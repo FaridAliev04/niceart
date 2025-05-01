@@ -28,13 +28,16 @@ const styles = {
         [breakpoint(768)] : {
             display:"flex",
             flexDirection:"column",
-            padding:"1rem"
+            padding:"0rem",
+            gap:rem(sizes.base),
+            marginTop:"2rem"
          },
         [breakpoint(576)] : {
             display:"flex",
             flexDirection:"column",
             gap:rem(sizes.base),
-            marginTop:"1rem"
+            padding:rem(sizes.base),
+            marginTop:'0',
          },
          
     },

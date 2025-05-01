@@ -101,7 +101,13 @@ const styles = {
         marginTop:"4rem"
     },
     copyright:{
-        color:"#6F6C90"
+        color:"#6F6C90",
+        [breakpoint(768)]:{
+            width:"13rem"
+        },
+        [breakpoint(576)] : {
+            width:"fit-content"
+         },
     },
     policy:{
         display:"flex",
