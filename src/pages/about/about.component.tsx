@@ -1,3 +1,4 @@
+import { useLeads } from '../../core/layouts/public/action/leads.query';
 import { useAboutStyles } from './about.styles';
 import AboutImgComoponent from './components/about-img/about-img.comoponent';
 import AboutUsComponent from './components/about-us/about-us.component';
@@ -7,12 +8,13 @@ import StrategyComponent from './components/strategy/strategy.component';
 
 const AboutComponent = () => {
     const classes=useAboutStyles()
+    const {data}=useLeads()
     return (
         <div className={classes.container}>
             <MainAboutComponent/>
-            <AboutUsComponent/>
+            <AboutUsComponent data={data}/>
             <AboutImgComoponent/>
-            <GoalComponent/>
+            <GoalComponent data={data}/>
             <StrategyComponent/>
         </div>
     );

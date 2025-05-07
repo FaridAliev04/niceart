@@ -1,18 +1,19 @@
+import { useCallback } from "react";
 import ArrowRight from "../../../../assets/images/icons/arrow-right";
 import ArrowUp from "../../../../assets/images/icons/arrow-up";
 import { useHelpYouStyles } from "./help-you.styles";
 
-const HelpYouComponent = () => {
+const HelpYouComponent = ({data}:any) => {
     const classes=useHelpYouStyles()
+    const dataFind=useCallback((data?.find((e:any)=>e.id==1)),[data])
     return (
         <div className={`${classes.container}`}>
             <h1 className={classes.header}>
-            We help you find
-            the perfect loan
+            {dataFind?.title}
             </h1>
             <div className={classes.textDiv}>
                 <p className={classes.text}>
-                Malesuada pellentesque bibendum enim eu sit. Tincidunt eget mi est, egestas. Nunc, dignissim amet, purus amet. Amet dictum sit elit urna non purus, gravida commodo. 
+                {dataFind?.description}
                 </p>
                 <div className={classes.btnDiv}>
                     <button className={classes.productBtn}>

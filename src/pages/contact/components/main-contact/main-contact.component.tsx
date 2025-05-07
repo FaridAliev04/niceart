@@ -1,4 +1,3 @@
-import React from 'react';
 import Home from '../../../../assets/images/icons/home';
 import ChevronRight from '../../../../assets/images/icons/chevron-right';
 import { useMainContactStyles } from './main-contact.styles';

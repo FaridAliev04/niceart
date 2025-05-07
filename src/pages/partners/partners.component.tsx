@@ -7,7 +7,7 @@ import PartnersModalComponent from "./components/partners-modal/partners-modal.c
 
 const PartnersComponent = () => {
     const classes=usePartnersStyles()
-    const [id,setId]=useState()
+    const [id,setId]=useState(null)
     return (
         <div className={classes.container}>
             <PartnersMainComponent/>

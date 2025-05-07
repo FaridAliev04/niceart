@@ -16,7 +16,7 @@ const styles = {
     lineHeight: "4rem",
     [breakpoint(1260)] : {
       fontSize:sizes.middelSize,
-      width:"20rem",
+      width:"18rem",
   },
   [breakpoint(768)]:{
       fontSize:sizes.middelSize,
@@ -34,7 +34,7 @@ const styles = {
   container:{
     display:"flex",
     justifyContent:"space-between",
-    alignItems: "anchor-center",
+    alignItems: "center",
     marginTop:"4rem",
     [breakpoint(768)]:{
       display:"flex",
@@ -42,7 +42,8 @@ const styles = {
       width:rem(sizes.largeMobileMainWidth),
       margin:sizes.marginAuto,
       gap:"2rem",
-      padding:rem(sizes.base)
+      padding:rem(sizes.base),
+      alignItems:"baseline"
     },
     [breakpoint(576)] : {
       width:sizes.smallMobileMainWidth,

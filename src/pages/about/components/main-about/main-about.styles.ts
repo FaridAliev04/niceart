@@ -14,7 +14,7 @@ const styles = {
         display:"flex",
         alignItems: "center",
         [breakpoint(1260)] : {
-            width:rem(sizes.tabletMainWidth),
+            width:"46rem",
             margin:sizes.marginAuto,
             marginTop:"2rem",
          },
@@ -25,7 +25,7 @@ const styles = {
             padding:"1rem"
          },
          [breakpoint(576)] : {
-            width:sizes.smallMobileMainWidth,
+            width:"27rem",
             margin:sizes.marginAuto,
             marginTop:"2rem",
             padding:"1rem"

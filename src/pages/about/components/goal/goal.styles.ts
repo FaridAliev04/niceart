@@ -15,21 +15,25 @@ const styles = {
         position:"relative",
         marginTop:"7rem",
         [breakpoint(1260)] : {
-            width:rem(sizes.tabletMainWidth),
+            width:"46rem",
             position:"static",
             display:"flex",
             flexDirection:"column",
             gap:"3rem",
             background:colors.footerBg,
-            padding:"2rem"
+            padding:"2rem",
+            "& img":{
+                width: "5rem",
+                height: "5rem"
+            },
          },
          [breakpoint(768)]:{
-            width:rem(sizes.largeMobileMainWidth),
+            width:"34rem",
             margin:sizes.marginAuto,
             marginTop:"5rem"
           },
           [breakpoint(576)] : {
-            width:(sizes.smallMobileMainWidth),
+            width:"27rem",
             margin:sizes.marginAuto,
             marginTop:"2rem",
             padding:"2rem 1rem",
@@ -64,13 +68,14 @@ const styles = {
         },
         },
     goalDiv:{
-        position:"absolute",
+        // position:"absolute",
         display:"flex",
         flexDirection:"column",
         gap:"1.5rem",
         top:"13rem",
+        justifyContent:"center",
         [breakpoint(1260)] : {
-            position:"static",    
+            position:"static", 
          },
          
     },
@@ -96,9 +101,7 @@ const styles = {
         display:"flex",
         flexDirection:"column",
         gap:"2rem",
-        background:colors.footerBg,
-        padding:"6rem 3rem 3rem 21rem",
-        marginLeft:"17rem",
+        padding:"1rem",
         [breakpoint(1260)] : {
             padding:"0",
             marginLeft:"0",
@@ -163,7 +166,22 @@ const styles = {
             justifyContent:"center",
             width:"100%"
         },
+    },
+    img:{
+        width:"10rem"
+    },
+    backgroundDiv:{
+        position:"absolute",
+        right:"0",
+        background:colors.footerBg,
+        marginLeft:"17rem",
+        width: "75%",
+        height: "100%",
+        // zIndex:"-1",
+        [breakpoint(1260)] : {
+            display:"none" 
+         },
     }
 }
 
-export const useGoalStyles = createUseStyles(styles);
+export const useGoalStyles = createUseStyles(styles as any);

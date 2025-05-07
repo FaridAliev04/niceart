@@ -2,7 +2,6 @@ import {createUseStyles} from 'react-jss';
 import sizes from '../../assets/styles/abstracts/sizes';
 import { breakpoint } from '../../assets/styles/abstracts/mixins';
 import { rem } from '../../assets/styles/abstracts/function';
-import colors from '../../assets/styles/abstracts/color';
 
 
 

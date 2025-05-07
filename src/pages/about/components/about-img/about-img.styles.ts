@@ -13,11 +13,11 @@ const styles = {
     background:colors.footerBg,
     marginTop:"15rem",
     [breakpoint(1260)] : {
-      width:rem(sizes.tabletMainWidth),
+      width:"46rem",
       margin:sizes.marginAuto,
       marginTop:"10rem"
    },
-   [breakpoint(768)]:{
+   [breakpoint(768)] : {
     width:rem(sizes.largeMobileMainWidth),
     margin:sizes.marginAuto,
     marginTop:"5rem",
@@ -34,22 +34,25 @@ const styles = {
   imgDiv:{
     bottom: "6rem",
     position: "relative",
-    left: "18rem",
+    left: "16%",
     width: "fit-content",
-    "& img":{
-      maxWidth:"70%",
+    "& video":{
+      maxWidth:"100%",
     },
     [breakpoint(1260)] : {
-      left:"13rem",
+      left:"13rem", 
       maxWidth:"70%",
+      "& video":{
+      maxWidth:"70%",
+    },
 
    },
-   [breakpoint(768)]:{
+   [breakpoint(768)] : {
     width:rem(sizes.largeMobileMainWidth),
     position:"static",
     display:"flex",
     justifyContent:"center",
-    "& img":{
+    "& video":{
       maxWidth:"100%",
     }
   }
@@ -58,4 +61,4 @@ const styles = {
 
 }
 
-export const useAboutImgStyles = createUseStyles(styles);
+export const useAboutImgStyles = createUseStyles(styles as any);

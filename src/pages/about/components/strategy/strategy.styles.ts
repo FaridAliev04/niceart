@@ -3,7 +3,6 @@ import sizes from '../../../../assets/styles/abstracts/sizes';
 import { rem } from '../../../../assets/styles/abstracts/function';
 import colors from '../../../../assets/styles/abstracts/color';
 import fonts from '../../../../assets/styles/abstracts/fonts';
-import StrategyComponent from './strategy.component';
 import { breakpoint } from '../../../../assets/styles/abstracts/mixins';
 
 
@@ -11,6 +10,11 @@ import { breakpoint } from '../../../../assets/styles/abstracts/mixins';
 const styles = {
   container:{
     marginTop:"7rem",
+    [breakpoint(1260)]:{
+      width:"46rem",
+      margin:sizes.marginAuto,
+      marginTop:"5rem"
+    },
     [breakpoint(768)]:{
       width:rem(sizes.largeMobileMainWidth),
       margin:sizes.marginAuto,
@@ -61,6 +65,10 @@ const styles = {
   fingerDiv:{
     display:"flex",
     justifyContent:"space-between",
+    [breakpoint(1260)]:{
+      display:"flex",
+      justifyContent:"center",
+    },
     [breakpoint(768)]:{
       display:"flex",
       justifyContent:"center",
@@ -84,7 +92,17 @@ const styles = {
   dataText:{
     color:colors.gray,
     width:"22.813rem",
-    lineHeight:"22px"
+    lineHeight:"22px",
+    [breakpoint(1260)]:{
+      width:"15rem"
+    },
+    [breakpoint(768)]:{
+
+    },
+    [breakpoint(576)] : {
+
+  },[breakpoint(440)] : {
+  }
   },
   fingerBox:{
     display:"flex",

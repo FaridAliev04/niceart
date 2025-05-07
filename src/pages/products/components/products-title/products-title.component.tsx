@@ -1,4 +1,3 @@
-import React from 'react';
 import { useProductsTitleStyles } from './products-title.styles';
 
 const ProductsTitleComponent = () => {

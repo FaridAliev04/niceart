@@ -1,61 +1,63 @@
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import ArrowRight from '../../../../assets/images/icons/arrow-right';
 import BigFinger from '../../../../assets/images/icons/bigFinger';
 import Homes from '../../../../assets/images/icons/homes';
 import { useEstateStyles } from './estate.style';
+import { useEstate } from './action/estate.query';
 
 const EstateComponent = () => {
     const classes=useEstateStyles()
     const navigate=useNavigate()
-
+    const {data}=useEstate()
+    console.log(data,"estate")
     const idParams=(id:number)=>{
         navigate(`/${id}`)
     }
-    const data=[
-        {
-            id:1,
-            header:"Daşınmaz əmlak krediti",
-            text:"Information about loan. Volutpat faucibus enim risus vulputate nisl sed sed. Facilisis pellentesque id tristique.",
-            duration:"24-72",
-            amount:"24 000 - 72 000",
-            rate:"12-18",
-            category:"home"
+    // const data=[
+    //     {
+    //         id:1,
+    //         header:"Daşınmaz əmlak krediti",
+    //         text:"Information about loan. Volutpat faucibus enim risus vulputate nisl sed sed. Facilisis pellentesque id tristique.",
+    //         duration:"24-72",
+    //         amount:"24 000 - 72 000",
+    //         rate:"12-18",
+    //         category:"home"
 
 
-        },
-        {
-            id:2,
-            header:"Magna feugiat morbi felis aliquam aenean.",
-            text:"Information about loan. Volutpat faucibus enim risus vulputate nisl sed sed. Facilisis pellentesque id tristique.",
-            duration:"24-72",
-            amount:"24 000 - 72 000",
-            rate:"12-18",
-            category:"finger"
+    //     },
+    //     {
+    //         id:2,
+    //         header:"Magna feugiat morbi felis aliquam aenean.",
+    //         text:"Information about loan. Volutpat faucibus enim risus vulputate nisl sed sed. Facilisis pellentesque id tristique.",
+    //         duration:"24-72",
+    //         amount:"24 000 - 72 000",
+    //         rate:"12-18",
+    //         category:"finger"
             
-        },
-        {
-            id:3,
-            header:"Posuere urna tellus port",
-            text:"Information about loan. Volutpat faucibus enim risus vulputate nisl sed sed. Facilisis pellentesque id tristique.",
-            duration:"24-72",
-            amount:"24 000 - 72 000",
-            rate:"12-18",
-            category:"finger"
+    //     },
+    //     {
+    //         id:3,
+    //         header:"Posuere urna tellus port",
+    //         text:"Information about loan. Volutpat faucibus enim risus vulputate nisl sed sed. Facilisis pellentesque id tristique.",
+    //         duration:"24-72",
+    //         amount:"24 000 - 72 000",
+    //         rate:"12-18",
+    //         category:"finger"
             
-        }
-    ]
+    //     }
+    // ]
     return (
         <div className={classes.container}>
             {
-                data.map((e,key)=>{
+                data?.map((e:any,key:number)=>{
                     return <div className={classes.estateBox} key={key}>
                             <div className={classes.estateMainBox}>
                                 <div className={classes.textDiv}>
                                     <h1 className={classes.estateHeader}>
-                                        {e.header}
+                                        {e.title}
                                     </h1>
                                     <p className={classes.estateText}>
-                                        {e.text}
+                                        {e.description}
                                     </p>
                                 </div>
                                 <div className={classes.conditions}>
@@ -64,7 +66,7 @@ const EstateComponent = () => {
                                             Müddət (Ay)
                                         </p>
                                         <span className={classes.conditionsValue}>
-                                            {e.duration}
+                                            {e.period}
                                         </span>
                                     </div>
                                     <div className={classes.conditionsBox}>
@@ -80,7 +82,7 @@ const EstateComponent = () => {
                                         Faiz dərəcəsi (%)
                                         </p>
                                         <span className={classes.conditionsValue}>
-                                            {e.rate}
+                                            {e.comission}
                                         </span>
                                     </div>
                                 </div>
@@ -91,7 +93,8 @@ const EstateComponent = () => {
 
                             </div>
                             <div className={classes.svgDiv}>
-                                {e.category==="home"?<Homes/>:<BigFinger/>}
+                                <img src={e.url} alt="" />
+                                {/* {e.category==="home"?<Homes/>:<BigFinger/>} */}
                             </div>
                     </div>
                 })

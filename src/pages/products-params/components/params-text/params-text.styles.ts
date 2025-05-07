@@ -19,6 +19,8 @@ const styles = {
             margin:sizes.marginAuto,
             padding:"1rem",
             marginTop:"32rem",
+            flexDirection:"column",
+            gap:rem(sizes.base)
          },
          [breakpoint(768)]:{
              width:rem(sizes.largeMobileMainWidth),

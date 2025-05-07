@@ -1,24 +1,25 @@
+import { useCallback } from "react";
 import { useAboutUsStyles } from "./about-us.styles";
 
-const AboutUsComponent = () => {
+const AboutUsComponent = ({data}:any) => {
     const classes=useAboutUsStyles()
+    const dataFind=useCallback((data?.find((e:any)=>e.id==5)),[data])
     return (
         <div className={classes.container}>
             <div>
                 <h1 className={classes.mainHeader}>
-                Title for about us or Lorem Ipsum motto
+                {dataFind?.title}
                 </h1>
             </div>
             <div className={classes.texts}>
                 <p className={classes.aboutUs}>
-                Biz kimik?
+                {dataFind?.tag}
                 </p>
                 <h1 className={classes.textsHeader}>
-                Lectus mauris pulvinar
-                sit?
+                {dataFind?.heading}
                 </h1>
                 <p className={classes.text}>
-                Vehicula elit est, neque non mattis pharetra, urna lectus magnis. Ultricies tellus adipiscing a sem ultrices eu pulvinar. Urna egestas est aliquet facilisis elit sit. Massa libero turpis facilisi mattis sit ac consectetur malesuada et. Urna, orci arcu senectus mattis nam euismod cum cursus. Enim nunc quis commodo leo libero diam. 
+                {dataFind?.description}
                 </p>
             </div>
         </div>

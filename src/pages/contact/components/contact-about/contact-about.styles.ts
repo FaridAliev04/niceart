@@ -177,15 +177,18 @@ const styles = {
 
     },
     img:{
-        maxWidth:"fit-content",
+        maxWidth:"14.313rem",
+        height:"19.313rem",
         [breakpoint(1260)] : {
-            maxWidth:"9rem"
+            maxWidth:"10rem",
+            height:"15rem",
          },
          [breakpoint(768)]:{
-             maxWidth:"9rem"
+            //  maxWidth:"9rem"
          },
          [breakpoint(576)] : {
-             maxWidth:"100px"
+             maxWidth:"90.73px",
+             height:"150.15px",
          },
     }
 }

@@ -10,9 +10,11 @@ import Phone from '../../../../../assets/images/icons/phone';
 import Mark from '../../../../../assets/images/icons/mark';
 import { NavLink } from 'react-router-dom';
 import { Routes } from '../../../../../router/routes';
+import { useContact } from '../../../../../pages/contact/components/contact-about/action/contact.query';
 
 const FooterComponent = () => {
     const classes=useFooterStyles()
+    const {data}=useContact()
     return (
         <div className={classes.mainDiv}>
             <footer className={classes.container}>
@@ -43,22 +45,22 @@ const FooterComponent = () => {
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink className={classes.list} to={Routes.default}>
+                                <NavLink className={classes.list} to={Routes.about}>
                                 About us
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink className={classes.list} to={Routes.default}>
+                                <NavLink className={classes.list} to={Routes.products}>
                                 Products
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink className={classes.list} to={Routes.default}>
+                                <NavLink className={classes.list} to={Routes.partners}>
                                 Partners
                                 </NavLink>
                             </li>
                             <li>
-                                <NavLink className={classes.list} to={Routes.default}>
+                                <NavLink className={classes.list} to={Routes.contact}>
                                 Contact Us
                                 </NavLink>
                             </li>
@@ -71,15 +73,15 @@ const FooterComponent = () => {
                         </h1>
                         <div className={classes.contactBox}>
                             <Email/>
-                            <span>contact@company.com</span>
+                            <span>{data?.phone}</span>
                         </div>
                         <div className={classes.contactBox}>
                             <Phone/>
-                            <span>(414) 687 - 5892</span>
+                            <span>{data?.callcenter}</span>
                         </div>
                         <div className={classes.contactBox}>
                             <Mark/>
-                            <span>Location of company</span>
+                            <span>{data?.location}</span>
                         </div>
                     </div>
                 </div>

@@ -39,6 +39,10 @@ const styles = {
         width:"fit-content",
         borderRadius:"8px",
         padding:"2px 4px"
+    },
+    partnersIcons:{
+      width:"32px",
+      height:"32px"
     }
   }
   

@@ -3,14 +3,19 @@ import { Slider, InputNumber, Input, Checkbox } from 'antd';
 import { useApplyStyles } from "./apply.styles";
 import type { CheckboxProps } from 'antd';
 import ArrowRight from "../../../assets/images/icons/arrow-right";
+import { useLeads } from "../../layouts/public/action/leads.query";
 
 const ApplyComponent = () => {
+    const {data}=useLeads()
+    console.log(data,"applu")
     const [value, setValue] = useState(5000); 
     const [time, setTime] = useState(12); 
     const [percent, setPercent] = useState(10);
     const [checkboxChecked, setCheckboxChecked] = useState(false);
     const [monthlyPayment, setMonthlyPayment] = useState(439.58 ); 
     const classes = useApplyStyles();
+    
+    const applyFind=data?.find((e:any)=>e.tag=="Apply to loan")
 
     const onChange = useCallback((newValue: number|any) => {
         setValue(newValue);
@@ -48,11 +53,10 @@ const ApplyComponent = () => {
             <div>
                 <div className={classes.texts}>
                     <p className={classes.header}>
-                        Apply to loan
+                        {applyFind?.tag}
                     </p>
                     <h1 className={classes.textHeader}>
-                        Id duis id turpis mi
-                        quisque. Nulla.
+                       {applyFind?.heading}
                     </h1>
                     <p className={classes.text}>
                         Malesuada tortor fringilla ut faucibus. Urna tellus lectus platea turpis non. Tellus odio eu ante tincidunt vivamus nunc nibh arcu, augue.

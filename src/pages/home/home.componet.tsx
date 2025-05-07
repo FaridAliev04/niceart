@@ -2,13 +2,15 @@ import HelpYouComponent from './components/help-you/help-you.component';
 import AboutComponent from './components/about/about.component';
 import ProductsComponent from './components/products/products.component';
 import ApplyComponent from '../../core/shared/apply/apply.component';
+import { useLeads } from '../../core/layouts/public/action/leads.query';
 
 const HomeComponet = () => {
+    const {data}=useLeads()
     return (
         <div>
-            <HelpYouComponent/>
+            <HelpYouComponent data={data}/>
             <AboutComponent/>
-            <ProductsComponent/>
+            <ProductsComponent data={data} />
             <ApplyComponent/>
         </div>
     );

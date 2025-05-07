@@ -9,6 +9,7 @@ import YouTube from '../../../../../assets/images/icons/youTube';
 import Twitter from '../../../../../assets/images/icons/twitter';
 import classNames from 'classnames';
 import Nav from '../../../../../assets/images/icons/nav';
+import axios from 'axios';
 
 const NavComponet = () => {
     const classes=useNavStyles()
@@ -35,7 +36,18 @@ const NavComponet = () => {
         if(location.pathname){
             setMenu(false)
         }
+
+        axios.get('https://api.jsonbin.io/v3/b/6818632a8960c979a593a1e3', {
+            headers: {
+              'X-Master-Key': '$2a$10$16UVMFx1T5AAoHL7XxpMYOnxKvrhzBoLpp.vBumZ2KlmPqU5aHI.2'
+            }
+          }).then(res => {
+            console.log(res.data);
+          }).catch(err => {
+            console.error(err);
+          });
     },[location])
+    
     return (
         <div className={`${classes.container}`}>
             <nav className={classes.nav}>

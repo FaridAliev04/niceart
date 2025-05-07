@@ -18,7 +18,10 @@ const styles = {
     backgroundColor: "rgba(0,0,0,0.4)",
     zIndex: 1000,
   },
-
+  partnersIcons:{
+    width:"60px",
+    height:"60px"
+  },
   modal: {
     width: "fit-content",
     padding: "1.5rem",

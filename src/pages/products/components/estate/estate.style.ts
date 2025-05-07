@@ -33,9 +33,13 @@ const styles = {
     estateText:{
         color:colors.gray,
         width:"37.75rem",
+        lineHeight:"22px",
         [breakpoint(1260)] : {
-           width:"fit-content"
+           width:"28rem"
          },
+         [breakpoint(768)] : {
+            width:"19rem"
+          },
     },
     textDiv:{
         display:"flex",
@@ -89,13 +93,21 @@ const styles = {
         display:"flex",
         alignItems: "end",
         [breakpoint(1260)]:{
-            width:"20rem"
+            width:"fit-content",
          },
         [breakpoint(768)]:{
-           width:"10rem"
+           "& img":{
+                // width:"10rem"
+        }
         },
         [breakpoint(576)] : {
-            display:"none"
+            position:"absolute",
+            right:"0",
+            bottom:"0",
+            width:"fit-content",
+            "& img":{
+                width:"6rem"
+        }
          },
     }
 }   
