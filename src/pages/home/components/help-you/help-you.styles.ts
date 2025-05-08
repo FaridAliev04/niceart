@@ -9,21 +9,21 @@ import { rem } from '../../../../assets/styles/abstracts/function';
 
 const styles = {
     container:{
-        width:sizes.mainWidth,
-        margin:sizes.marginAuto,
+        // width:sizes.mainWidth,
+        // margin:sizes.marginAuto,
         display:"flex",
         justifyContent:"space-between",
         marginTop:"5rem",
         [breakpoint(1260)] : {
-            width:rem(sizes.tabletMainWidth),
-            margin:sizes.marginAuto,
+            // width:rem(sizes.tabletMainWidth),
+            // margin:sizes.marginAuto,
             marginTop:"5rem",
             padding:"0 1rem",
             gap:rem(sizes.base)
         },
         [breakpoint(768)] : {
-            width:rem(sizes.largeMobileMainWidth),
-            margin:sizes.marginAuto,
+            // width:rem(sizes.largeMobileMainWidth),
+            // margin:sizes.marginAuto,
             marginTop:"5rem",
             padding:"0 1rem",
             display:"flex",
@@ -31,14 +31,14 @@ const styles = {
             gap:"1rem"
         },
         [breakpoint(576)] : {
-            width:sizes.smallMobileMainWidth,
-            margin:sizes.marginAuto,
+            // width:sizes.smallMobileMainWidth,
+            // margin:sizes.marginAuto,
             marginTop:"5rem",
             padding:"0 1rem",
         },
         [breakpoint(440)] : {
-            width:rem(sizes.miniMobileMainWidth),
-            margin:sizes.marginAuto,
+            // width:rem(sizes.miniMobileMainWidth),
+            // margin:sizes.marginAuto,
             marginTop:"5rem",
             padding:"0 1rem",
         },
@@ -84,15 +84,17 @@ const styles = {
         },
         [breakpoint(768)] : {
            fontSize:"32px",
+           width:"fit-content"
         },
     },
     text:{
         color:colors.gray,
-        width:"600px",
+        width:"530px",
         lineHeight:"22px",
         [breakpoint(1260)] : {
-            width:"27rem"
+            width:"35rem"
         },
+
         [breakpoint(576)] : {
             width:"fit-content"
         },

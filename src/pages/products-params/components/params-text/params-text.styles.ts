@@ -9,32 +9,32 @@ import { breakpoint } from '../../../../assets/styles/abstracts/mixins';
 
 const styles = {
     container:{
-        width:sizes.mainWidth,
-        margin:sizes.marginAuto,
+        // width:sizes.mainWidth,
+        // margin:sizes.marginAuto,
         marginTop:"35rem",
         display:"flex",
         justifyContent:"space-between",
-        [breakpoint(1260)] : {
-            width:rem(sizes.tabletMainWidth),
-            margin:sizes.marginAuto,
-            padding:"1rem",
-            marginTop:"32rem",
+        [breakpoint(1249)] : {
+            // width:rem(sizes.tabletMainWidth),
+            // margin:sizes.marginAuto,
+            // padding:"1rem",
+            marginTop:"27rem",
             flexDirection:"column",
             gap:rem(sizes.base)
          },
          [breakpoint(768)]:{
-             width:rem(sizes.largeMobileMainWidth),
-             margin:sizes.marginAuto,
-             padding:"1rem",
+            //  width:rem(sizes.largeMobileMainWidth),
+            //  margin:sizes.marginAuto,
+            //  padding:"1rem",
              marginTop:"37rem",
              flexDirection:"column",
              gap:rem(sizes.base)
          },
          [breakpoint(576)] : {
-             width:rem(sizes.miniMobileMainWidth),
-             margin:sizes.marginAuto,
-             padding:"1rem",
-             marginTop:"43rem",
+            //  width:rem(sizes.miniMobileMainWidth),
+            //  margin:sizes.marginAuto,
+            //  padding:"1rem",
+             marginTop:"27rem",
          },
     },
     paramsCredit:{

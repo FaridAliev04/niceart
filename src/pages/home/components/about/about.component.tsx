@@ -4,7 +4,7 @@ import { useAboutHomeStyle } from './about.style';
 const AboutComponent = () => {
     const classes=useAboutHomeStyle()
     return (
-        <div className={classes.container}>
+        <div className={`centered-container container mx-auto mt-4 ${classes.container}`}>
             <div className={classes.aboutMainDiv}>
                 <div className={classes.section}>
                     <div className={classes.imgDiv}>

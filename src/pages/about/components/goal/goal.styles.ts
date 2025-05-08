@@ -15,7 +15,7 @@ const styles = {
         position:"relative",
         marginTop:"7rem",
         [breakpoint(1260)] : {
-            width:"46rem",
+            // width:"46rem",
             position:"static",
             display:"flex",
             flexDirection:"column",
@@ -28,13 +28,13 @@ const styles = {
             },
          },
          [breakpoint(768)]:{
-            width:"34rem",
-            margin:sizes.marginAuto,
+            // width:"34rem",
+            // margin:sizes.marginAuto,
             marginTop:"5rem"
           },
           [breakpoint(576)] : {
-            width:"27rem",
-            margin:sizes.marginAuto,
+            // width:"27rem",
+            // margin:sizes.marginAuto,
             marginTop:"2rem",
             padding:"2rem 1rem",
             "& h1":{
@@ -50,8 +50,8 @@ const styles = {
             }
         },
         [breakpoint(440)] : {
-            width:"18rem",
-            margin:sizes.marginAuto,
+            // width:"18rem",
+            // margin:sizes.marginAuto,
             marginTop:"2rem",
             padding:"2rem 1rem",
             "& h1":{
@@ -92,7 +92,7 @@ const styles = {
     goalText:{
         color:colors.gray,
         lineHeight:"22px",
-        width:"31.25rem",
+        width:"27.25rem",
         [breakpoint(768)] : {
             width:"fit-content"
         },

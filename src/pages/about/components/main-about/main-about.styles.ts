@@ -8,33 +8,33 @@ import { breakpoint } from '../../../../assets/styles/abstracts/mixins';
 
 const styles = {
     container:{
-        width:sizes.mainWidth,
-        margin:sizes.marginAuto,
+        // width:sizes.mainWidth,
+        // margin:sizes.marginAuto,
         marginTop:"2rem",
         display:"flex",
         alignItems: "center",
         [breakpoint(1260)] : {
-            width:"46rem",
-            margin:sizes.marginAuto,
-            marginTop:"2rem",
+            // width:"46rem",
+            // margin:sizes.marginAuto,
+            // marginTop:"2rem",
          },
          [breakpoint(768)] : {
-            width:rem(sizes.largeMobileMainWidth),
-            margin:sizes.marginAuto,
-            marginTop:"2rem",
-            padding:"1rem"
+            // width:rem(sizes.largeMobileMainWidth),
+            // margin:sizes.marginAuto,
+            // marginTop:"2rem",
+            // padding:"1rem"
          },
          [breakpoint(576)] : {
-            width:"27rem",
-            margin:sizes.marginAuto,
-            marginTop:"2rem",
-            padding:"1rem"
+            // width:"27rem",
+            // margin:sizes.marginAuto,
+            // marginTop:"2rem",
+            // padding:"1rem"
         },
         [breakpoint(440)] : {
-            width:"18rem",
-            margin:sizes.marginAuto,
-            marginTop:"2rem",
-            padding:"1rem"
+            // width:"18rem",
+            // margin:sizes.marginAuto,
+            // marginTop:"2rem",
+            // padding:"1rem"
         },
     },
     about:{

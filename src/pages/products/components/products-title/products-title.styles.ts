@@ -36,8 +36,8 @@ const styles = {
             display:"flex",
             flexDirection:"column",
             gap:rem(sizes.base),
-            padding:rem(sizes.base),
-            marginTop:'0',
+            // padding:rem(sizes.base),
+            marginTop:'2rem',
          },
          
     },
@@ -62,7 +62,7 @@ const styles = {
         lineHeight:"22px",
         width:"37.75rem",
         [breakpoint(1260)] : {
-            width: "24rem"
+            width: "22rem"
          },
          [breakpoint(768)] : {
             width:"fit-content"

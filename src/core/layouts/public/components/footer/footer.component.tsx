@@ -17,7 +17,7 @@ const FooterComponent = () => {
     const {data}=useContact()
     return (
         <div className={classes.mainDiv}>
-            <footer className={classes.container}>
+            <footer className={`centered-container container mx-auto ${classes.container}`}>
                 <div className={classes.containerDiv}>
                 <div className={classes.logoDiv}>
                     <Logo/>

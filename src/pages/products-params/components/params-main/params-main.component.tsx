@@ -45,11 +45,11 @@ const mainParamsComponent = () => {
     const {data}=useEstate()
     const params=data?.filter((e:any)=>e.id==id)
     return (
-        <div className={classes.container}>
+        <div className={`${classes.container}`}>
 
             {
                 params?.map((e:any,key:number)=>{
-                    return <div className={classes.box} key={key}>
+                    return <div className={`centered-container container mx-auto ${classes.box}`} key={key}>
                                 <div className={classes.mainContainer}> 
                                    <Home/>
                                    <ChevronRight/>

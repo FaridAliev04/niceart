@@ -4,7 +4,7 @@ import { useMainProductsStyles } from "./main-products.styles";
 const MainProductsComponent = () => {
     const classes=useMainProductsStyles()
     return (
-        <div className={classes.container}> 
+        <div className={`${classes.container}`}> 
             <Home/>
             <ChevronRight/>
             <span className={classes.about}>

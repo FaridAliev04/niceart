@@ -12,7 +12,7 @@ const ContactAboutComponent = () => {
     console.log(fileData)
 
     return (
-        <div className={classes.container}>
+        <div className={`centered-container container mx-auto ${classes.container}`}>
             <div className={classes.contactAbout}>
                 <div className={classes.contactDiv}>
                     <h1 className={classes.header}>

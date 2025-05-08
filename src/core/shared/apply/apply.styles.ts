@@ -11,15 +11,15 @@ import { breakpoint } from '../../../assets/styles/abstracts/mixins';
 
 const styles = {
     container:{
-        width:sizes.mainWidth,
-        margin:sizes.marginAuto,
+        // width:sizes.mainWidth,
+        // margin:sizes.marginAuto,
         display:"flex",
         justifyContent:"space-between",
         marginTop:"10rem",
         position:"relative",
         [breakpoint(1260)] : {
-           width:rem(sizes.tabletMainWidth),
-           margin:sizes.marginAuto,
+        //    width:rem(sizes.tabletMainWidth),
+        //    margin:sizes.marginAuto,
            marginTop:"10rem",
            display:"flex",
            flexDirection:"column",
@@ -28,19 +28,19 @@ const styles = {
            padding:"2.5rem"
         },
         [breakpoint(768)]:{
-            width:rem(sizes.largeMobileMainWidth),
-            margin:sizes.marginAuto,
+            // width:rem(sizes.largeMobileMainWidth),
+            // margin:sizes.marginAuto,
             marginTop:"5rem",
             padding:"2rem",
         },
         [breakpoint(576)] : {
-            width:sizes.smallMobileMainWidth,
-            margin:sizes.marginAuto,
+            // width:sizes.smallMobileMainWidth,
+            // margin:sizes.marginAuto,
             marginTop:"5rem",
         },
         [breakpoint(440)] : {
-            width:rem(sizes.miniMobileMainWidth),
-            margin:sizes.marginAuto,
+            // width:rem(sizes.miniMobileMainWidth),
+            // margin:sizes.marginAuto,
             marginTop:"5rem",
         },
     },
@@ -71,7 +71,10 @@ const styles = {
     },
     text:{
         color:colors.gray,
-        width:"26.25rem",
+        width:"19.25rem",
+        [breakpoint(1200)] : {
+            width:"fit-content"
+         },
         [breakpoint(576)] : {
             width:"fit-content"
          },
@@ -81,7 +84,7 @@ const styles = {
         flexDirection:"column",
         gap:"2rem",
         position:"absolute",
-        top:"8rem",
+        top:"6rem",
         [breakpoint(1260)] : {
             position:"static"
          },
@@ -156,8 +159,8 @@ const styles = {
         display:"flex"
     },
     applyMainDiv:{
-        background:colors.footerBg,
-        padding: "7rem 4rem 4rem 18rem",
+        // background:colors.footerBg,
+        padding: "5rem 2rem",
         [breakpoint(1260)] : {
             padding:"0",
             background:"none"
@@ -172,8 +175,19 @@ const styles = {
         display:"flex",
         flexDirection:"column",
         gap:"0.5rem"
+    },
+    backgroundDiv:{
+        position:"absolute",
+        right:"0",
+        background:colors.footerBg,
+        marginLeft:"17rem",
+        width: "85%",
+        height: "100%",
+        zIndex:"-1",
+        [breakpoint(1260)] : {
+            display:"none" 
+         },
     }
-
 }
 
 export const useApplyStyles = createUseStyles(styles);

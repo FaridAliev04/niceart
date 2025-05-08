@@ -8,7 +8,7 @@ import MapComponent from './components/map/map.component';
 const ContactComponent = () => {
     const classes=useContactStyles()
     return (
-        <div>
+        <div className=''>
             <MainContactComponent/>
             <ContactAboutComponent/>
             <ContactFormsComponent/>

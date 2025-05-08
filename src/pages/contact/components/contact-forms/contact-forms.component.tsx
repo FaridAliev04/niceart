@@ -8,8 +8,8 @@ const ContactFormsComponent = () => {
     };
     const classes = useContactFormsStyles()
     return (
-        <div className={classes.container}>
-            <div className={classes.mainDiv}>
+        <div className={`${classes.container}`}>
+            <div className={`centered-container container mx-auto ${classes.mainDiv}`}>
                 <div className={classes.textDiv}>
                     <h1 className={classes.header}>
                         Have a project!

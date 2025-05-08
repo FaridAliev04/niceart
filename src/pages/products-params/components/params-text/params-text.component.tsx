@@ -4,7 +4,7 @@ import { useParamsTextStyles } from './params-text.styles';
 const ParamsTextComponent = () => {
     const classes=useParamsTextStyles()
     return (
-        <div className={classes.container}>
+        <div className={`centered-container container mx-auto ${classes.container}`}>
             <div className={classes.paramsTexts}>
                 <p className={classes.paramsCredit}>
                 Kredit Haqqında

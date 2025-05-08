@@ -30,26 +30,26 @@ const styles = {
         justifyContent:"space-between",
         marginTop:"4rem",
         [breakpoint(1260)] : {
-           padding:rem(sizes.base)
+        //    padding:rem(sizes.base)
         },
         [breakpoint(768)]:{
             display:"flex",
             flexDirection:"column",
-            width:rem(sizes.largeMobileMainWidth),
-            margin:sizes.marginAuto,
+            // width:rem(sizes.largeMobileMainWidth),
+            // margin:sizes.marginAuto,
             gap:"2rem",
-            padding:rem(sizes.base),
+            // padding:rem(sizes.base),
           },
           [breakpoint(576)] : {
-            width:sizes.smallMobileMainWidth,
-            margin:sizes.marginAuto,
-            padding:"1rem"
+            // width:sizes.smallMobileMainWidth,
+            // margin:sizes.marginAuto,
+            // padding:"1rem"
         },
         [breakpoint(440)] : {
-           width:"19rem",
-           margin:sizes.marginAuto,
-           padding:"1rem",
-           marginTop:"1rem"
+        //    width:"19rem",
+        //    margin:sizes.marginAuto,
+        //    padding:"1rem",
+           marginTop:"2rem"
        },
     },
     textHeader:{

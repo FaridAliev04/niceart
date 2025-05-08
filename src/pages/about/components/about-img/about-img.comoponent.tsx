@@ -5,7 +5,7 @@ const AboutImgComoponent = () => {
     const classes = useAboutImgStyles()
     const { data } = useAboutImg()
     return (
-        <div className={classes.container}>
+        <div className={` centered-container container mx-auto ${classes.container}`}>
             <div className={classes.imgDiv}>
                 <video
                     src={data?.record.file.url}

@@ -29,7 +29,7 @@ const GoalComponent = ({data}:any) => {
     const {data:purposes}=usePurposes()
 
     return (
-        <div className={classes.container}>
+        <div className={`centered-container container mx-auto ${classes.container}`}>
             <div className={classes.goalDiv}>
                 <p className={classes.goal}>
                 {dataFind?.tag}

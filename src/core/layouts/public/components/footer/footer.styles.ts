@@ -10,26 +10,26 @@ import { breakpoint } from '../../../../../assets/styles/abstracts/mixins';
 
 const styles = {
     container:{
-        width:sizes.mainWidth,
-        margin:sizes.marginAuto,
+        // width:sizes.mainWidth,
+        // margin:sizes.marginAuto,
         [breakpoint(1260)] : {
-            width:rem(sizes.tabletMainWidth),
-            margin:sizes.marginAuto,
+            // width:rem(sizes.tabletMainWidth),
+            // margin:sizes.marginAuto,
             padding:"0 1rem"
         },
         [breakpoint(768)]:{
-            width:rem(sizes.largeMobileMainWidth),
-            margin:sizes.marginAuto,
+            // width:rem(sizes.largeMobileMainWidth),
+            // margin:sizes.marginAuto,
             marginTop:"5rem",
             // padding:"2rem",
         },
         [breakpoint(576)] : {
-            width:sizes.smallMobileMainWidth,
-            margin:sizes.marginAuto,    
+            // width:sizes.smallMobileMainWidth,
+            // margin:sizes.marginAuto,    
          },
         [breakpoint(416)] : {
-            width:rem(sizes.miniMobileMainWidth),
-            margin:sizes.marginAuto
+            // width:rem(sizes.miniMobileMainWidth),
+            // margin:sizes.marginAuto
          },
     },
     containerDiv:{

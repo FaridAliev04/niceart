@@ -5,7 +5,7 @@ import { useMainContactStyles } from './main-contact.styles';
 const MainContactComponent = () => {
     const classes=useMainContactStyles()
     return (
-        <div className={classes.container}> 
+        <div className={`centered-container container mx-auto ${classes.container}`}> 
             <Home/>
             <ChevronRight/>
             <span className={classes.contact}>

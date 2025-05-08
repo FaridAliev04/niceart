@@ -9,7 +9,7 @@ const PartnersComponent = () => {
     const classes=usePartnersStyles()
     const [id,setId]=useState(null)
     return (
-        <div className={classes.container}>
+        <div className={'centered-container container mx-auto mt-4'}>
             <PartnersMainComponent/>
             <PartnersTextComponent/>
             <PartnersDataComponent id={id} setId={setId}/>

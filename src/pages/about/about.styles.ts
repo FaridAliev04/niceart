@@ -11,23 +11,23 @@ const styles = {
         width:sizes.mainWidth,
         margin:sizes.marginAuto,
         [breakpoint(1260)] : {
-            width:rem(sizes.tabletMainWidth),
-            margin:sizes.marginAuto,
+            // width:rem(sizes.tabletMainWidth),
+            // margin:sizes.marginAuto,
             padding:"1rem"
          },
          [breakpoint(768)]:{
-             width:rem(sizes.largeMobileMainWidth),
-             margin:sizes.marginAuto,
+            //  width:rem(sizes.largeMobileMainWidth),
+            //  margin:sizes.marginAuto,
              padding:"1rem"
          },
          [breakpoint(576)] : {
-             width:sizes.smallMobileMainWidth,
-             margin:sizes.marginAuto,
+            //  width:sizes.smallMobileMainWidth,
+            //  margin:sizes.marginAuto,
              padding:"1rem"
          },
          [breakpoint(440)] : {
-            width:rem(sizes.miniMobileMainWidth),
-            margin:sizes.marginAuto,
+            // width:rem(sizes.miniMobileMainWidth),
+            // margin:sizes.marginAuto,
             padding:"1rem"
         },
     },

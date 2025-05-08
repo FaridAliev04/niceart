@@ -39,21 +39,21 @@ const styles = {
     [breakpoint(768)]:{
       display:"flex",
       flexDirection:"column",
-      width:rem(sizes.largeMobileMainWidth),
-      margin:sizes.marginAuto,
+      // width:rem(sizes.largeMobileMainWidth),
+      // margin:sizes.marginAuto,
       gap:"2rem",
       padding:rem(sizes.base),
       alignItems:"baseline"
     },
     [breakpoint(576)] : {
-      width:sizes.smallMobileMainWidth,
-      margin:sizes.marginAuto,
+      // width:sizes.smallMobileMainWidth,
+      // margin:sizes.marginAuto,
       marginTop:"2rem",
       padding:"1rem"
   },
   [breakpoint(440)] : {
-    width:"18rem",
-    margin:sizes.marginAuto,
+    // width:"18rem",
+    // margin:sizes.marginAuto,
     marginTop:"1rem",
     padding:"1rem"
 },

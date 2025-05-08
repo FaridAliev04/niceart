@@ -45,7 +45,7 @@ const ParamsCreditComponent = () => {
 
     };
     return (
-        <div className={`${classes.container} row `}>
+        <div className={`centered-container container mx-auto ${classes.container} row `}>
             {
                 data.map((e,key)=>{
                     return <div className={`${classes.box} col-12 col-sm-6 col-md-4 col-lg-4 p-3 p-20`} key={key}>

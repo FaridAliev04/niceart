@@ -21,7 +21,7 @@ const StrategyComponent = () => {
     // ]
     const {data}=useStrategy()
     return (
-        <div className={classes.container}>
+        <div className={`centered-container container mx-auto mt-100 ${classes.container}`}>
             
             <div className={classes.strategyDiv}>
                 <p className={classes.strategy}>

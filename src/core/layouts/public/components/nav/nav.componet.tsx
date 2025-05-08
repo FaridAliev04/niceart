@@ -49,7 +49,7 @@ const NavComponet = () => {
     },[location])
     
     return (
-        <div className={`${classes.container}`}>
+        <div className={`centered-container container mx-auto ${classes.container}`}>
             <nav className={classes.nav}>
                 <div>
                     <Logo/>

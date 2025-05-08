@@ -7,7 +7,7 @@ import EstateComponent from './components/estate/estate.component';
 const ProductsComponent = () => {
     const classes=useProductsStyles()
     return (
-        <div className={classes.container}>
+        <div className='centered-container container mx-auto mt-4'>
             <MainProductsComponent/>
             <ProductsTitleComponent/>
             <EstateComponent/>

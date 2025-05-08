@@ -11,18 +11,18 @@ const styles = {
   container:{
     marginTop:"7rem",
     [breakpoint(1260)]:{
-      width:"46rem",
-      margin:sizes.marginAuto,
+      // width:"46rem",
+      // margin:sizes.marginAuto,
       marginTop:"5rem"
     },
     [breakpoint(768)]:{
-      width:rem(sizes.largeMobileMainWidth),
-      margin:sizes.marginAuto,
+      // width:rem(sizes.largeMobileMainWidth),
+      // margin:sizes.marginAuto,
       marginTop:"5rem"
     },
     [breakpoint(576)] : {
-      width:rem(sizes.miniMobileMainWidth),
-      margin:sizes.marginAuto,
+      // width:rem(sizes.miniMobileMainWidth),
+      // margin:sizes.marginAuto,
       marginTop:"5rem",
       padding:"1rem",
       "& h1":{
@@ -45,7 +45,10 @@ const styles = {
     color:colors.gray,
     fontFamily:fonts.fontExtraBold,
     width:"23.75rem",
-    lineHeight:"3rem"
+    lineHeight:"3rem",
+    [breakpoint(1260)]:{
+      width:"fit-content"
+    },
   },
   strategyDiv:{
     display:"flex",

@@ -49,7 +49,7 @@ const ApplyComponent = () => {
     },[monthlyPayment])
 
     return (
-        <div className={classes.container}>
+        <div className={`centered-container container mx-auto ${classes.container}`}>
             <div>
                 <div className={classes.texts}>
                     <p className={classes.header}>
@@ -64,6 +64,7 @@ const ApplyComponent = () => {
                 </div>
             </div>
 
+        <div className={classes.backgroundDiv}></div>
             <div className={`${classes.applyMainDiv}`}>
                 <div className={`${classes.applyDiv}`}>
                     <div className={classes.inputsDiv} style={{ maxWidth: 300 }}>

@@ -5,7 +5,7 @@ const ProductsComponent = ({data}:any) => {
     const classes=useProductStyles()
 
     return (
-        <div className={classes.container}>
+        <div className={`centered-container container mx-auto ${classes.container}`}>
             <h1 className={classes.header}>
                 {productsFind?.tag}
             </h1>

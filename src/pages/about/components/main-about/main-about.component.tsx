@@ -6,7 +6,7 @@ import { useMainAboutStyles } from "./main-about.styles";
 const MainAboutComponent = ({data}:any) => {
     const classes=useMainAboutStyles()
     return (
-        <div className={classes.container}> 
+        <div className={` centered-container container  mx-auto   ${classes.container}`}> 
             <Home/>
             <ChevronRight/>
             <span className={classes.about}>
