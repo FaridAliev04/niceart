@@ -92,7 +92,7 @@ const styles = {
         width:"530px",
         lineHeight:"22px",
         [breakpoint(1260)] : {
-            width:"35rem"
+            width:"27rem"
         },
 
         [breakpoint(576)] : {

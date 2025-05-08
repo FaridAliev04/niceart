@@ -77,7 +77,7 @@ const styles = {
         lineHeight:"22px",
         width:"37.75rem",
         [breakpoint(1260)] : {
-            width:"32rem"
+            width:"27rem"
         }, 
         [breakpoint(768)]:{
             width:"fit-content"

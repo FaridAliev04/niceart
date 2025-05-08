@@ -13,7 +13,6 @@ function App() {
     <>
     <QueryClientProvider client={queryClient}>
     {loader ? <LoaderComponent/> : null}
-    {/* <LoaderComponent/> */}
       <RouterProvider  router={router}/>
     </QueryClientProvider>
      
