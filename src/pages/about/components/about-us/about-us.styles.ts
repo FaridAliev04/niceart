@@ -39,21 +39,15 @@ const styles = {
     [breakpoint(768)]:{
       display:"flex",
       flexDirection:"column",
-      // width:rem(sizes.largeMobileMainWidth),
-      // margin:sizes.marginAuto,
       gap:"2rem",
       padding:rem(sizes.base),
       alignItems:"baseline"
     },
     [breakpoint(576)] : {
-      // width:sizes.smallMobileMainWidth,
-      // margin:sizes.marginAuto,
       marginTop:"2rem",
       padding:"1rem"
   },
   [breakpoint(440)] : {
-    // width:"18rem",
-    // margin:sizes.marginAuto,
     marginTop:"1rem",
     padding:"1rem"
 },
@@ -83,23 +77,12 @@ const styles = {
     [breakpoint(1260)] : {
       width:"fit-content"
   }, 
-//   [breakpoint(576)] : {
-//     width:rem(sizes.miniMobileMainWidth),
-//     margin:sizes.marginAuto,
-//     marginTop:"2rem",
-// },
     
   },
   texts:{
     display:"flex",
     flexDirection:"column",
     gap:rem(sizes.base),
-  //   [breakpoint(576)] : {
-  //     width:rem(sizes.miniMobileMainWidth),
-  //     margin:sizes.marginAuto,
-  //     marginTop:"2rem",
-  //     padding:"1rem"
-  // },
   },
 
 

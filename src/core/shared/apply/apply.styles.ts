@@ -11,15 +11,11 @@ import { breakpoint } from '../../../assets/styles/abstracts/mixins';
 
 const styles = {
     container:{
-        // width:sizes.mainWidth,
-        // margin:sizes.marginAuto,
         display:"flex",
         justifyContent:"space-between",
         marginTop:"10rem",
         position:"relative",
         [breakpoint(1260)] : {
-        //    width:rem(sizes.tabletMainWidth),
-        //    margin:sizes.marginAuto,
            marginTop:"10rem",
            display:"flex",
            flexDirection:"column",
@@ -28,19 +24,13 @@ const styles = {
            padding:"2.5rem"
         },
         [breakpoint(768)]:{
-            // width:rem(sizes.largeMobileMainWidth),
-            // margin:sizes.marginAuto,
             marginTop:"5rem",
             padding:"2rem",
         },
         [breakpoint(576)] : {
-            // width:sizes.smallMobileMainWidth,
-            // margin:sizes.marginAuto,
             marginTop:"5rem",
         },
         [breakpoint(440)] : {
-            // width:rem(sizes.miniMobileMainWidth),
-            // margin:sizes.marginAuto,
             marginTop:"5rem",
         },
     },
@@ -159,7 +149,6 @@ const styles = {
         display:"flex"
     },
     applyMainDiv:{
-        // background:colors.footerBg,
         padding: "5rem 2rem",
         [breakpoint(1260)] : {
             padding:"0",

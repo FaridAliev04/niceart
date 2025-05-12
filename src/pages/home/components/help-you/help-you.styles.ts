@@ -9,21 +9,15 @@ import { rem } from '../../../../assets/styles/abstracts/function';
 
 const styles = {
     container:{
-        // width:sizes.mainWidth,
-        // margin:sizes.marginAuto,
         display:"flex",
         justifyContent:"space-between",
         marginTop:"5rem",
         [breakpoint(1260)] : {
-            // width:rem(sizes.tabletMainWidth),
-            // margin:sizes.marginAuto,
             marginTop:"5rem",
             padding:"0 1rem",
             gap:rem(sizes.base)
         },
         [breakpoint(768)] : {
-            // width:rem(sizes.largeMobileMainWidth),
-            // margin:sizes.marginAuto,
             marginTop:"5rem",
             padding:"0 1rem",
             display:"flex",
@@ -31,14 +25,10 @@ const styles = {
             gap:"1rem"
         },
         [breakpoint(576)] : {
-            // width:sizes.smallMobileMainWidth,
-            // margin:sizes.marginAuto,
             marginTop:"5rem",
             padding:"0 1rem",
         },
         [breakpoint(440)] : {
-            // width:rem(sizes.miniMobileMainWidth),
-            // margin:sizes.marginAuto,
             marginTop:"5rem",
             padding:"0 1rem",
         },
@@ -89,11 +79,7 @@ const styles = {
     },
     text:{
         color:colors.gray,
-        width:"530px",
         lineHeight:"22px",
-        [breakpoint(1260)] : {
-            width:"27rem"
-        },
 
         [breakpoint(576)] : {
             width:"fit-content"

@@ -7,11 +7,11 @@ const HelpYouComponent = ({data}:any) => {
     const classes=useHelpYouStyles()
     const dataFind=useCallback((data?.find((e:any)=>e.id==1)),[data])
     return (
-        <div className={`centered-container container mx-auto mt-80 ${classes.container}`}>
-            <h1 className={classes.header}>
+        <div className={`centered-container container mx-auto mt-80 row gy-3 `}>
+            <h1 className={`col-lg-6  ${classes.header}`}>
             {dataFind?.title}
             </h1>
-            <div className={classes.textDiv}>
+            <div className={` col-lg-6  ${classes.textDiv}`}>
                 <p className={classes.text}>
                 {dataFind?.description}
                 </p>

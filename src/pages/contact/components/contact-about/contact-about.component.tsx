@@ -9,7 +9,6 @@ const ContactAboutComponent = () => {
     const classes = useContactAboutStyles()
     const { data: contactData } = useContact();
     const { data: fileData } = useContactFile();
-    console.log(fileData)
 
     return (
         <div className={`centered-container container mx-auto ${classes.container}`}>

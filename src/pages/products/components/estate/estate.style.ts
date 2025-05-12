@@ -2,8 +2,7 @@ import {createUseStyles} from 'react-jss';
 import colors from '../../../../assets/styles/abstracts/color';
 import fonts from '../../../../assets/styles/abstracts/fonts';
 import { breakpoint } from '../../../../assets/styles/abstracts/mixins';
-import { rem } from '../../../../assets/styles/abstracts/function';
-import sizes from '../../../../assets/styles/abstracts/sizes';
+
 
 
 
@@ -39,6 +38,9 @@ const styles = {
          },
          [breakpoint(768)] : {
             width:"19rem"
+          },
+          [breakpoint(576)] : {
+            width:"fit-content"
           },
     },
     textDiv:{

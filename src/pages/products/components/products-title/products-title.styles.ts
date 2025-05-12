@@ -36,7 +36,6 @@ const styles = {
             display:"flex",
             flexDirection:"column",
             gap:rem(sizes.base),
-            // padding:rem(sizes.base),
             marginTop:'2rem',
          },
          

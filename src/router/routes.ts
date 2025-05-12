@@ -2,7 +2,7 @@ export enum Routes {
     default = '/',
     about='/about',
     products='/products',
-    productsParams='/:id',
+    productsParams='/products/:id',
     partners='/partners',
     contact='/contact'
 }

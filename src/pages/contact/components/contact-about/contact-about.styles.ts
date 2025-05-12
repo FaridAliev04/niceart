@@ -9,29 +9,14 @@ import { breakpoint } from '../../../../assets/styles/abstracts/mixins';
 
 const styles = {
     container:{
-        // width:sizes.mainWidth,
-        // margin:sizes.marginAuto,
-        [breakpoint(1260)] : {
-            // width:rem(sizes.tabletMainWidth),
-            // margin:sizes.marginAuto,
-            // padding:"1rem"
-         },
          [breakpoint(768)]:{
-            //  width:rem(sizes.largeMobileMainWidth),
-            //  margin:sizes.marginAuto,
-            //  padding:"1rem",
              paddingBottom:"30rem"
          },
 
          [breakpoint(576)] : {
-        //     width:sizes.smallMobileMainWidth,
-        //     margin:sizes.marginAuto,
-        //    padding:"2rem",
             paddingBottom:"30rem"
         },
         [breakpoint(440)] : {
-        //    width:rem(sizes.miniMobileMainWidth),
-        //    margin:sizes.marginAuto,
            paddingBottom:"30rem"
        },
     },
@@ -111,7 +96,7 @@ const styles = {
             width:"15rem"
          },
          [breakpoint(768)]:{
-            width:"fit-contact"
+            width:"fit-contect"
          },
          [breakpoint(576)] : {
 
@@ -149,7 +134,6 @@ const styles = {
              maxWidth:"10rem"
          },
          [breakpoint(576)] : {
-            //  maxWidth:"fit-content",
              gap:rem(sizes.base)
          },
     },
@@ -177,12 +161,12 @@ const styles = {
     img:{
         maxWidth:"14.313rem",
         height:"19.313rem",
+        border:`5px solid ${colors.green}`,
         [breakpoint(1260)] : {
             maxWidth:"10rem",
             height:"15rem",
          },
          [breakpoint(768)]:{
-            //  maxWidth:"9rem"
          },
          [breakpoint(576)] : {
              maxWidth:"90.73px",

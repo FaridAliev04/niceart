@@ -11,7 +11,7 @@ const EstateComponent = () => {
     const {data}=useEstate()
     console.log(data,"estate")
     const idParams=(id:number)=>{
-        navigate(`/${id}`)
+        navigate(`/products/${id}`)
     }
     // const data=[
     //     {
@@ -47,7 +47,7 @@ const EstateComponent = () => {
     //     }
     // ]
     return (
-        <div className={classes.container}>
+        <div className={`${classes.container}`}>
             {
                 data?.map((e:any,key:number)=>{
                     return <div className={classes.estateBox} key={key}>

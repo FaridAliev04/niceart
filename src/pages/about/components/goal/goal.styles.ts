@@ -15,7 +15,6 @@ const styles = {
         position:"relative",
         marginTop:"7rem",
         [breakpoint(1260)] : {
-            // width:"46rem",
             position:"static",
             display:"flex",
             flexDirection:"column",
@@ -28,21 +27,14 @@ const styles = {
             },
          },
          [breakpoint(768)]:{
-            // width:"34rem",
-            // margin:sizes.marginAuto,
             marginTop:"5rem"
           },
           [breakpoint(576)] : {
-            // width:"27rem",
-            // margin:sizes.marginAuto,
             marginTop:"2rem",
             padding:"2rem 1rem",
             "& h1":{
                 fontSize:"1.5rem",
                  width:"fit-content"
-            },
-            "& p":{
-                width:"fit-content"
             },
             "& img":{
                 width: "5rem",
@@ -50,16 +42,11 @@ const styles = {
             }
         },
         [breakpoint(440)] : {
-            // width:"18rem",
-            // margin:sizes.marginAuto,
             marginTop:"2rem",
             padding:"2rem 1rem",
             "& h1":{
                 fontSize:"1.5rem",
                  width:"fit-content"
-            },
-            "& p":{
-                width:"fit-content"
             },
             "& img":{
                 width: "5rem",
@@ -68,7 +55,6 @@ const styles = {
         },
         },
     goalDiv:{
-        // position:"absolute",
         display:"flex",
         flexDirection:"column",
         gap:"1.5rem",
@@ -149,7 +135,10 @@ const styles = {
         [breakpoint(576)] : {
             fontSize:"14px !important",
             fontFamily:fonts.font,
-
+            width:"20rem"
+        },
+        [breakpoint(400)] : {
+            width:"13rem"
         },
     },
     goalDataTextDiv:{
@@ -158,13 +147,6 @@ const styles = {
         justifyContent: "space-evenly",
         [breakpoint(576)] : {
             gap:rem(sizes.base)
-        },
-    },
-    goalImgDiv:{
-        [breakpoint(576)] : {
-            display:"flex",
-            justifyContent:"center",
-            width:"100%"
         },
     },
     img:{
@@ -177,7 +159,7 @@ const styles = {
         marginLeft:"17rem",
         width: "75%",
         height: "100%",
-        // zIndex:"-1",
+        zIndex:"-1",
         [breakpoint(1260)] : {
             display:"none" 
          },

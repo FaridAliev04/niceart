@@ -1,6 +1,6 @@
 import {createUseStyles} from 'react-jss';
-import colors from '../../../../assets/styles/abstracts/color';
-
+import sizes from '../../../assets/styles/abstracts/sizes';
+import colors from '../../../assets/styles/abstracts/color';
 
 
 
@@ -9,13 +9,12 @@ const styles = {
         marginTop:"2rem",
         display:"flex",
         alignItems: "center",
-
     },
-    contact:{
+    about:{
         color:colors.green
     }
 
 
 }
 
-export const useMainContactStyles = createUseStyles(styles);
+export const usebreadCrumb = createUseStyles(styles);

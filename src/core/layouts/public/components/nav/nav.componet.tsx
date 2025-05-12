@@ -36,16 +36,6 @@ const NavComponet = () => {
         if(location.pathname){
             setMenu(false)
         }
-
-        axios.get('https://api.jsonbin.io/v3/b/6818632a8960c979a593a1e3', {
-            headers: {
-              'X-Master-Key': '$2a$10$16UVMFx1T5AAoHL7XxpMYOnxKvrhzBoLpp.vBumZ2KlmPqU5aHI.2'
-            }
-          }).then(res => {
-            console.log(res.data);
-          }).catch(err => {
-            console.error(err);
-          });
     },[location])
     
     return (

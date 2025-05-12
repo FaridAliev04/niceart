@@ -11,18 +11,12 @@ const styles = {
   container:{
     marginTop:"7rem",
     [breakpoint(1260)]:{
-      // width:"46rem",
-      // margin:sizes.marginAuto,
       marginTop:"5rem"
     },
     [breakpoint(768)]:{
-      // width:rem(sizes.largeMobileMainWidth),
-      // margin:sizes.marginAuto,
       marginTop:"5rem"
     },
     [breakpoint(576)] : {
-      // width:rem(sizes.miniMobileMainWidth),
-      // margin:sizes.marginAuto,
       marginTop:"5rem",
       padding:"1rem",
       "& h1":{
@@ -99,13 +93,6 @@ const styles = {
     [breakpoint(1260)]:{
       width:"15rem"
     },
-    [breakpoint(768)]:{
-
-    },
-    [breakpoint(576)] : {
-
-  },[breakpoint(440)] : {
-  }
   },
   fingerBox:{
     display:"flex",

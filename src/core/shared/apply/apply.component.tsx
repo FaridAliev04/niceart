@@ -3,7 +3,7 @@ import { Slider, InputNumber, Input, Checkbox } from 'antd';
 import { useApplyStyles } from "./apply.styles";
 import type { CheckboxProps } from 'antd';
 import ArrowRight from "../../../assets/images/icons/arrow-right";
-import { useLeads } from "../../layouts/public/action/leads.query";
+import { useLeads } from "../mainAction/action/leads.query";
 
 const ApplyComponent = () => {
     const { data } = useLeads()
