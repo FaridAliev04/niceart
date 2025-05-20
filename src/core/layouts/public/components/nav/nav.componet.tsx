@@ -32,7 +32,6 @@ const NavComponet = () => {
     });
 
     useEffect(()=>{
-        console.log(location.pathname)
         if(location.pathname){
             setMenu(false)
         }

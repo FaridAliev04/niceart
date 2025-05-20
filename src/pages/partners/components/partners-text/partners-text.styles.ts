@@ -26,14 +26,7 @@ const styles = {
       },
     },
     container:{
-        display:"flex",
-        justifyContent:"space-between",
         marginTop:"4rem",
-        [breakpoint(768)]:{
-            display:"flex",
-            flexDirection:"column",
-            gap:"2rem",
-          },
         [breakpoint(440)] : {
            marginTop:"2rem"
        },
@@ -61,18 +54,14 @@ const styles = {
     texts:{
         color:colors.gray,
         lineHeight:"22px",
-        width:"37.75rem",
-        [breakpoint(1260)] : {
-            width:"27rem"
-        }, 
-        [breakpoint(768)]:{
-            width:"fit-content"
-          },
+         width:"fit-content",
+         padding:'0'
     },
     textsDiv:{
         display:"flex",
         flexDirection:"column",
-        gap:rem(sizes.base)
+        gap:rem(sizes.base),
+        padding:"0"
     },
     productBtn:{
         display: "flex",
@@ -85,8 +74,10 @@ const styles = {
         fontFamily:fonts.font,
         padding:"0.5rem 1rem",
         borderRadius:"8px"
+    },
+    partnersHeaderDiv:{
+        padding:'0'
     }
-
 
 }
 

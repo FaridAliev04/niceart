@@ -69,6 +69,7 @@ const styles = {
         fontFamily:fonts.fontExtraBold,
         color:colors.green,
         fontSize:"72px",
+        padding:"0",
         [breakpoint(1260)] : {
             fontSize:sizes.tabletExtraLargeFontSize
         },
@@ -88,7 +89,8 @@ const styles = {
     textDiv:{
         display:"flex",
         flexDirection: "column",
-        gap:"1.5rem"
+        gap:"1.5rem",
+        padding:"0"
     }
 }
 

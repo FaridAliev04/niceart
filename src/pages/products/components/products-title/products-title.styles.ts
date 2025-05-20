@@ -22,20 +22,13 @@ const styles = {
          },
     },
     container:{
-        display:"flex",
-        justifyContent:"space-between",
         marginTop:"4rem",
+         padding:"0rem",
         [breakpoint(768)] : {
-            display:"flex",
-            flexDirection:"column",
             padding:"0rem",
-            gap:rem(sizes.base),
             marginTop:"2rem"
          },
         [breakpoint(576)] : {
-            display:"flex",
-            flexDirection:"column",
-            gap:rem(sizes.base),
             marginTop:'2rem',
          },
          
@@ -59,16 +52,7 @@ const styles = {
     texts:{
         color:colors.gray,
         lineHeight:"22px",
-        width:"37.75rem",
-        [breakpoint(1260)] : {
-            width: "22rem"
-         },
-         [breakpoint(768)] : {
-            width:"fit-content"
-         },
-         [breakpoint(576)] : {
-            width:"fit-content"
-         },
+       width:"fit-content",
     },
     textsDiv:{
         display:"flex",

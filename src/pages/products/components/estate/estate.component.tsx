@@ -9,7 +9,6 @@ const EstateComponent = () => {
     const classes=useEstateStyles()
     const navigate=useNavigate()
     const {data}=useEstate()
-    console.log(data,"estate")
     const idParams=(id:number)=>{
         navigate(`/products/${id}`)
     }

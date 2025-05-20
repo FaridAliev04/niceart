@@ -11,12 +11,12 @@ const styles = {
   mainHeader:{
     fontSize:sizes.extraLargeFontSize,
     color:colors.green,
-    width:"33.125rem",
+    // width:"33.125rem",
     fontFamily:fonts.fontExtraBold,
     lineHeight: "4rem",
     [breakpoint(1260)] : {
       fontSize:sizes.middelSize,
-      width:"18rem",
+      // width:"18rem",
   },
   [breakpoint(768)]:{
       fontSize:sizes.middelSize,
@@ -32,25 +32,13 @@ const styles = {
     
   },
   container:{
-    display:"flex",
-    justifyContent:"space-between",
-    alignItems: "center",
-    marginTop:"4rem",
-    [breakpoint(768)]:{
-      display:"flex",
-      flexDirection:"column",
-      gap:"2rem",
-      padding:rem(sizes.base),
-      alignItems:"baseline"
-    },
-    [breakpoint(576)] : {
-      marginTop:"2rem",
-      padding:"1rem"
-  },
-  [breakpoint(440)] : {
-    marginTop:"1rem",
-    padding:"1rem"
-},
+ marginTop:"4rem",
+        [breakpoint(768)] : {
+            marginTop:"2rem"
+         },
+        [breakpoint(576)] : {
+            marginTop:'2rem',
+         },
   },
   aboutUs:{
     color:colors.green,
@@ -59,9 +47,9 @@ const styles = {
   textsHeader:{
     fontSize:sizes.largeFontSize,
     color:colors.gray,
-    width:"450px",
     fontFamily:fonts.fontExtraBold,
     lineHeight: "3rem",
+    padding:"0",
     [breakpoint(1260)] : {
       fontSize:sizes.middelSize,
   },
@@ -72,19 +60,20 @@ const styles = {
   },
   text:{
     color:colors.gray,
-    width:"600px",
+    width:"fit-content",
     lineHeight: "normal",
-    [breakpoint(1260)] : {
-      width:"fit-content"
-  }, 
+
     
   },
   texts:{
     display:"flex",
     flexDirection:"column",
     gap:rem(sizes.base),
+    padding:"0"
   },
-
+mainHeaderDiv:{
+  padding:"0"
+}
 
 }
 

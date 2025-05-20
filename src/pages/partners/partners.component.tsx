@@ -3,12 +3,13 @@ import PartnersDataComponent from "./components/partners-data/partners-data.comp
 import PartnersMainComponent from "./components/partners-main/partners-main.component";
 import PartnersTextComponent from "./components/partners-text/partners-text.component";
 import PartnersModalComponent from "./components/partners-modal/partners-modal.component";
+import BreadcrumbComponent from "../../core/shared/breadcrumb/breadcrumb.component";
 
 const PartnersComponent = () => {
     const [id,setId]=useState(null)
     return (
-        <div className={'centered-container container mx-auto mt-4'}>
-            <PartnersMainComponent/>
+        <div>
+            <BreadcrumbComponent/>
             <PartnersTextComponent/>
             <PartnersDataComponent id={id} setId={setId}/>
             <PartnersModalComponent  id={id} setId={setId}/>

@@ -3,13 +3,13 @@ import { useProductsTitleStyles } from './products-title.styles';
 const ProductsTitleComponent = () => {
     const classes=useProductsTitleStyles()
     return (
-        <div className={`${classes.container}`}>
-            <div>
+        <div className={`row ${classes.container}`}>
+            <div className='col-lg-6'>
                 <h1 className={classes.productHeader}>
                 Title for Products or Lorem Ipsum motto
                 </h1>
             </div>
-            <div className={classes.textsDiv}>
+            <div className={`col-lg-6 ${classes.textsDiv}`}>
                 <h1 className={classes.pulvinarHeader}>
                 Lectus mauris pulvinar
                 sit?

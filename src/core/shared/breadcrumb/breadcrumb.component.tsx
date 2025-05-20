@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import Home from '../../../assets/images/icons/home';
 import ChevronRight from '../../../assets/images/icons/chevron-right';
 import { usebreadCrumb } from './breadcrumb.styles';
@@ -29,15 +28,7 @@ const BreadcrumbComponent = () => {
             id:4,
             path:"/partners",
             title:"Partners",
-        },
-        {
-            id:5,
-            path:"/products",
-            title:"",
-        },
-
-        
-        
+        },      
     ]
     const data=link.filter((e)=>e.path==locationPath)
 

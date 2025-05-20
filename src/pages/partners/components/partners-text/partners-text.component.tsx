@@ -4,13 +4,13 @@ import { usePartnersTextStyles } from './partners-text.styles';
 const PartnersTextComponent = () => {
     const classes=usePartnersTextStyles()
     return (
-        <div className={classes.container}>
-            <div>
+        <div className={`container row ${classes.container}`}>
+            <div className={`col-lg-6 ${classes.partnersHeaderDiv}`}>
                 <h1 className={classes.partnersHeader}>
                 Title for Products or Lorem Ipsum motto
                 </h1>
             </div>
-            <div className={classes.textsDiv}>
+            <div className={`col-lg-6 ${classes.textsDiv}`}>
                 <h1 className={classes.pulvinarHeader}>
                 Lectus mauris pulvinar
                 </h1>

@@ -81,9 +81,6 @@
 import { usePartnersDataStyles } from './partners-data.styles';
 import { useCallback } from 'react';
 import { usePartnersData } from './action/partners-data.query';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Placeholder from 'react-bootstrap/Placeholder';
 
 const PartnersDataComponent = ({ id, setId }: any) => {
   const { data, isLoading } = usePartnersData();
@@ -98,7 +95,7 @@ const PartnersDataComponent = ({ id, setId }: any) => {
   }
 
   return (
-    <div className={`row gx-4 ${classes.container}`}>
+    <div className={`container mx-auto  row gx-4 ${classes.container}`}>
       {data?.map((e: any, key: number) => (
         <div
           onClick={() => idFunction(e.id)}

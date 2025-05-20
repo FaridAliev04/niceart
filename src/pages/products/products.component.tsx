@@ -1,6 +1,5 @@
 import ProductsTitleComponent from './components/products-title/products-title.component';
 import EstateComponent from './components/estate/estate.component';
-import BreadcrumbComponent from '../../core/shared/breadcrumb/breadcrumb.component';
 import MainProductsComponent from './components/main-products/main-products.component';
 
 const ProductsComponent = () => {

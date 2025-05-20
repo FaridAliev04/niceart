@@ -5,13 +5,13 @@ const AboutUsComponent = ({data}:any) => {
     const classes=useAboutUsStyles()
     const dataFind=useCallback((data?.find((e:any)=>e.id==5)),[data])
     return (
-        <div className={`centered-container container mx-auto ${classes.container}`}>
-            <div>
+        <div className={`centered-container container mx-auto row ${classes.container}`}>
+            <div className={`col-lg-6 ${classes.mainHeaderDiv}`}>
                 <h1 className={classes.mainHeader}>
                 {dataFind?.title}
                 </h1>
             </div>
-            <div className={classes.texts}>
+            <div className={`col-lg-6 ${classes.texts}`}>
                 <p className={classes.aboutUs}>
                 {dataFind?.tag}
                 </p>

@@ -69,7 +69,6 @@ const PartnersModalComponent = ({ id, setId }: number | any) => {
     const closeModal = useCallback(() => {
         setId()
     }, [])
-    console.log(modal,"modalk")
 
     return (
         <div className={id ? classes.container : ""}>

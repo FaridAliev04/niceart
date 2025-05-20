@@ -49,7 +49,7 @@ const mainParamsComponent = () => {
 
             {
                 params?.map((e:any,key:number)=>{
-                    return <div className={`centered-container container mx-auto ${classes.box}`} key={key}>
+                    return <div className={`centered-container container mx-auto`} key={key}>
                                 <div className={classes.mainContainer}> 
                                    <Home/>
                                    <ChevronRight/>

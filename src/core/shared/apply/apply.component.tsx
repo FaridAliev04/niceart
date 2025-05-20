@@ -7,7 +7,6 @@ import { useLeads } from "../mainAction/action/leads.query";
 
 const ApplyComponent = () => {
     const { data } = useLeads()
-    console.log(data, "applu")
     const [value, setValue] = useState(5000);
     const [time, setTime] = useState(12);
     const [percent, setPercent] = useState(10);
@@ -15,8 +14,9 @@ const ApplyComponent = () => {
     const [monthlyPayment, setMonthlyPayment] = useState(439.58);
     const classes = useApplyStyles();
 
-    const applyFind = data?.find((e: any) => e.tag == "Apply to loan")
-
+    const applyFind = data?.find((e: any) => e.id === 4)
+    console.log(applyFind)
+    
     const onChange = useCallback((newValue: number | any) => {
         setValue(newValue);
         calculateMonthlyPayment(newValue, time, percent);
